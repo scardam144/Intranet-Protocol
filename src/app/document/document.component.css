@@ -1,0 +1,147 @@
+.left-side{
+    float: left;
+    width: 50%;
+    height: 100%;
+
+}
+.right-side{
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+.image-left{
+    width: 25%;
+    float: left;
+    height: 100%;
+}
+.text-left{
+    width: 75%;
+    float: right;
+    height: 100%;
+}
+.myfile {
+    line-height: 70px;
+    font-size: 14px;
+    font-weight: 500;
+    height: 100%;
+    
+}
+.container-fluid{
+    height: 80px;
+    border-bottom: solid 1px black;
+}
+.myText {
+    line-height: 70px;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: italic;
+   
+}
+.text-right{
+    width: 45%;
+    float: left;
+}
+.pdf-viewer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(5px 5px 5px #222222);
+  }
+  
+  .textarea {
+      margin-top: 15px; 
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+  }
+span.c{
+    width: 37%;
+    float: left;
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+.tes:hover{
+  border-bottom: 4px solid #f74288;
+}
+
+  
+.test:hover {
+  
+  border-bottom: solid 4px #f74288;
+}
+
+
+span.d{
+    width: 37%;
+    float: right;
+ 
+    font-size: 20px;
+    font-weight: 500;
+}
+.inputs {
+    position:relative;
+    padding-top: 1%;
+    float: right;
+    
+    right: -45%;
+  }
+  .text-f {
+    text-align: center;
+    border: solid 1px;
+    
+
+  }
+  .input-f ::placeholder{
+    color: grey;
+    font-size: 15px;
+  }
+  
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8%;
+    width: 50%;
+    display: block;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #ffffff; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #303a99; 
+    border-radius: 20px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #1e2572; 
+  }
+  .Documentbox {
+    box-shadow: 0 4px 8px 0 rgba(167, 165, 165, 0.253);
+    transition: 0.7s;
+    border-radius: 10%;
+  }
+  
+  .Documentbox:hover {
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
+}
+
+.Documentbox1 {
+    box-shadow: 0 4px 8px 0 rgba(167, 165, 165, 0.253);
+    transition: 0.7s;
+    border-radius: 10%;
+  }
+  
+  .Documentbox1:hover {
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
+}
+

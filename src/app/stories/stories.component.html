@@ -1,0 +1,437 @@
+
+<section class="container" style="padding: 1%; padding-left: 3.5%;">
+  <nav class="navbar2">
+    <ul>
+        <li><span (click)="PhotoboxFunction()" style="cursor: pointer;" class="test">Photo Gallery </span>
+        </li>
+        <li><span (click)="VideoboxFunction()" class="tes"  style="color: black; cursor: pointer;" >Video Gallery </span>
+        </li>
+        </ul>
+    </nav>
+  </section>
+
+
+<section class="container" *ngIf="Photobox">
+    <div class="left_part" style="margin-left: 2%;">
+      <section class="container">
+        <span class="c" style="width: 2%;"></span>
+        <span class="c" style="font-size: 15px; color: rgb(114, 111, 111);"> Launching Event</span>
+    </section>&nbsp;
+        <div class="office-image" style="  position: relative; display: none;">
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+          <img id="expandedImg"  class="img-box" style="width: 93%; height: 400px; margin-left: 30px; border-radius: 10px;">
+        </div>&nbsp;
+      
+
+            
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="padding-top: 2%; padding-bottom: 4%; border-radius: 5px; width: 90%; ">
+                  
+                    <div class="carousel-inner" style="width: 100%; margin-left: auto;border-radius: 10px; padding: 2%; margin-right: auto; background-color: white;">
+                    
+                      <div class="carousel-item active" >
+                        <img src="../../assets/images/office2.jpg" onclick="myFunction(this);" alt="..." height="150px" style="width: 23%;float: left; padding-left: 2%;object-fit: cover;">
+                        <img src="../../assets/images/image_gallery.png" onclick="myFunction(this);" alt="..." height="150px" style="width: 23%; float: left; padding-left: 2%;object-fit: cover;">
+                        <img src="../../assets/images/office3.jpg" onclick="myFunction(this);" alt="..." height="150px" style="width: 23%; float: left; padding-left: 2%;object-fit: cover;">
+                        <img src="../../assets/images/team2.png" onclick="myFunction(this);" alt="..." height="150px" style="width: 23%; float: left;padding-left: 2%;object-fit: cover;">
+                      </div>
+                      <div class="carousel-item" *ngIf ="IndependenceBox">
+                        <img src="../../assets/images/team1.png" onclick="myFunction(this);" alt="..." height="150px" style="width: 23%;float: left; padding-left: 2%;object-fit: cover;">
+                        <img src="../../assets/images/team1.png" onclick="myFunction(this);" alt="..." height="150px" style="width: 23%; float: left; padding-left: 2%;object-fit: cover;">
+                        <img src="../../assets/images/team1.png" onclick="myFunction(this);" alt="..." height="150px" style="width: 23%; float: left; padding-left: 2%;object-fit: cover;">
+                        <img src="../../assets/images/team1.png" onclick="myFunction(this);" alt="..." height="150px" style="width: 23%; float: left;padding-left: 2%;object-fit: cover;">
+                       </div>
+                      <div class="carousel-item" *ngIf ="AnnualdayBox">
+                        <img src="../../assets/images/team2.png" onclick="myFunction(this);" alt="..." height="150px" style="width: 23%;float: left; padding-left: 2%;object-fit: cover;">
+                        <img src="../../assets/images/team2.png" onclick="myFunction(this);" alt="..." height="150px" style="width: 23%; float: left; padding-left: 2%;object-fit: cover;">
+                        <img src="../../assets/images/team2.png" onclick="myFunction(this);" alt="..." height="150px" style="width: 23%; float: left; padding-left: 2%;object-fit: cover;">
+                        <img src="../../assets/images/team2.png" onclick="myFunction(this);" alt="..." height="150px" style="width: 23%; float: left;padding-left: 2%;object-fit: cover;">
+                        </div>
+                     
+                     </div>
+                      
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev" style="width: 5%;background-color: #091351;
+                    border-radius: 40px 0 0 40px;
+                   
+                    height: 30%; margin-top: auto; margin-bottom: auto;" data-bs-target="#carouselExampleControls" data-bs-slide="prev" >
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden" >Previous</span>
+                  </a>
+                    <a class="carousel-control-next"  href="#carouselExampleControls" role="button" data-slide="next" type="button" style="width: 5%; background-color: #091351; 
+                    border-radius: 0 40px 40px 0;
+                    margin-right: -5%;
+                    height: 30%; margin-top: auto; margin-bottom: auto;" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                </a>
+                   </div>
+                  
+           
+          </div>
+          
+    &nbsp;&nbsp;&nbsp;
+
+    <div class="right_part">
+    <div class="sections" style="padding-top: 13%;">
+        <div class="card" style="height: 605px; border: none; border-radius: 12px; width: 290px; ">
+            <div class="card-body">
+              <h5 class="card-title">PHOTO ALBUMS</h5>&nbsp;
+              <h5 class="card-text"><span (click)="IndependenceFunction()" style="cursor: pointer;">Independence Day  </span></h5>&nbsp;
+             
+               
+              <div class="row row-cols-1 row-cols-md-3 g-4" style="padding-left: 2ch; padding-right: 2.5ch;" > 
+                <div class="col">
+                  <div class="card h-40" style="border-radius: 5px;">
+                    <img src="../../assets/images/team1.png" onclick="myFunction(this);" class="card-img-top" alt="..." width="25px" height="70px" style="border-radius: 5px; display: flex;" >
+                    
+                    
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-40" style="border-radius: 5px;">
+                    <img src="../../assets/images/team1.png" class="card-img-top" alt="..." width="25px" height="70px" style="border-radius: 5px;" >
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-40" style="border-radius: 5px;">
+                    <img src="../../assets/images/team1.png" class="card-img-top" alt="..." width="25px" height="70px" style="border-radius: 5px;" >
+                 
+                   
+                  </div>
+                </div>
+              </div>&nbsp;&nbsp;
+
+              <h4 class="card-text" style="padding-top: 2ch;"><span (click)="AnnualdayFunction()" style="cursor: pointer;">Annual Day Celebration</span></h4>&nbsp;
+              <div class="row row-cols-1 row-cols-md-3 g-4" style="padding-left: 2ch; padding-right: 2.5ch;" > 
+                <div class="col">
+                  <div class="card h-40" style="border-radius: 5px;">
+                    <img src="../../assets/images/team2.png" class="card-img-top" alt="..." width="25px" height="70px" style="border-radius: 5px; display: flex;" >
+                    
+                    
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-40" style="border-radius: 5px;">
+                    <img src="../../assets/images/team2.png" class="card-img-top" alt="..." width="25px" height="70px" style="border-radius: 5px;" >
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-40" style="border-radius: 5px;">
+                    <img src="../../assets/images/team2.png" class="card-img-top" alt="..." width="25px" height="70px" style="border-radius: 5px;" >
+                 
+                  </div>
+                </div>
+              </div>
+
+              <h4 class="card-text" style="padding-top: 2ch;">Blood Donation Campaign</h4>&nbsp;
+
+              <div class="row row-cols-1 row-cols-md-3 g-4" style="padding-left: 2ch; padding-right: 2.5ch;" > 
+                <div class="col">
+                  <div class="card h-40" style="border-radius: 5px;">
+                    <img src="../../assets/images/team1.png" class="card-img-top" alt="..." width="25px" height="70px" style="border-radius: 5px; display: flex;" >
+                    
+                    
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-40" style="border-radius: 5px;">
+                    <img src="../../assets/images/team1.png" class="card-img-top" alt="..." width="25px" height="70px" style="border-radius: 5px;" >
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-40" style="border-radius: 5px;">
+                    <img src="../../assets/images/team1.png" class="card-img-top" alt="..." width="25px" height="70px" style="border-radius: 5px;" >
+                 
+                   
+                  </div>
+                </div>
+              </div>
+
+              <h4 class="card-text" style="padding-top: 2ch;">Annual Day Celebration</h4>&nbsp;
+
+              <div class="row row-cols-1 row-cols-md-3 g-4" style="padding-left: 2ch; padding-right: 2.5ch;" > 
+                <div class="col">
+                  <div class="card h-40" style="border-radius: 5px;">
+                    <img src="../../assets/images/team1.png" class="card-img-top" alt="..." width="25px" height="70px" style="border-radius: 5px; display: flex;" >
+                    
+                    
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-40" style="border-radius: 5px;">
+                    <img src="../../assets/images/team1.png" class="card-img-top" alt="..." width="25px" height="70px" style="border-radius: 5px;" >
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-40" style="border-radius: 5px;">
+                    <img src="../../assets/images/team1.png" class="card-img-top" alt="..." width="25px" height="70px" style="border-radius: 5px;" >
+                 
+                   
+                  </div>
+                </div>
+              </div>
+              <h4 class="card-text" style="padding-top: 2ch;">Annual Day Celebration</h4>&nbsp;
+
+              <div class="row row-cols-1 row-cols-md-3 g-4" style="padding-left: 2ch; padding-right: 2.5ch;" > 
+                <div class="col">
+                  <div class="card h-40" style="border-radius: 5px;">
+                    <img src="../../assets/images/team1.png" class="card-img-top" alt="..." width="25px" height="70px" style="border-radius: 5px; display: flex;" >
+                    
+                    
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-40" style="border-radius: 5px;">
+                    <img src="../../assets/images/team1.png" class="card-img-top" alt="..." width="25px" height="70px" style="border-radius: 5px;" >
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-40" style="border-radius: 5px;">
+                    <img src="../../assets/images/team1.png" class="card-img-top" alt="..." width="25px" height="70px" style="border-radius: 5px;" >
+                 
+                   
+                  </div>
+                </div>
+              </div>
+              <h4 class="card-text" style="padding-top: 2ch;">Annual Day Celebration</h4>&nbsp;
+
+              <div class="row row-cols-1 row-cols-md-3 g-4" style="padding-left: 2ch; padding-right: 2.5ch;" > 
+                <div class="col">
+                  <div class="card h-40" style="border-radius: 5px;">
+                    <img src="../../assets/images/team1.png" class="card-img-top" alt="..." width="25px" height="70px" style="border-radius: 5px; display: flex;" >
+                    
+                    
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-40" style="border-radius: 5px;">
+                    <img src="../../assets/images/team1.png" class="card-img-top" alt="..." width="25px" height="70px" style="border-radius: 5px;" >
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-40" style="border-radius: 5px;">
+                    <img src="../../assets/images/team1.png" class="card-img-top" alt="..." width="25px" height="70px" style="border-radius: 5px;" >
+                 
+                   
+                  </div>
+                </div>
+              </div>
+             
+            </div>
+          </div>
+          
+    </div>
+        
+    </div>
+    
+</section>
+
+
+<section class="container" *ngIf="Videobox">
+        
+
+  <div class="left_part" style="margin-left: 2%;">
+    <section class="container">
+      <span class="c" style="width: 2%;"></span>
+      <span class="c" style="font-size: 15px; color: rgb(114, 111, 111);"> Launching Event</span>
+    </section>&nbsp;
+  <div class="office-image" style="  position: relative; display: none;">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <iframe id="expandedImg"  class="img-box" style="width: 93%; height: 400px; margin-left: 30px; border-radius: 10px;"></iframe>
+  </div>&nbsp;
+
+            
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="padding-top: 2%; padding-bottom: 4%; border-radius: 5px; width: 90%; ">
+                  
+        <div class="carousel-inner" style="width: 100%; margin-left: auto;border-radius: 10px; padding: 2%; margin-right: auto; background-color: white;">
+        
+          <div class="carousel-item active" >
+            <iframe src="../../assets/business.mp4.mp4" onclick="myFunction(this);"  alt="..." height="150px" style="width: 23%;float: left; padding-left: 2%;"></iframe>
+            <iframe src="https://www.youtube.com/embed/KA8FtEMEUyQ"  alt="..." height="150px" style="width: 23%; float: left; padding-left: 2%;"></iframe>
+            <iframe src="https://www.youtube.com/embed/aiK951xEgnM"  alt="..." height="150px" style="width: 23%;float: left; padding-left: 2%;"></iframe>
+            <iframe src="https://www.youtube.com/embed/KA8FtEMEUyQ"  alt="..." height="150px" style="width: 23%; float: left;padding-left: 2%;"></iframe>
+          </div>
+          <div class="carousel-item">
+            <iframe src="https://www.youtube.com/embed/aiK951xEgnM"  alt="..." height="150px" style="width: 23%;float: left; padding-left: 6%;"></iframe>
+            <iframe src="https://www.youtube.com/embed/KA8FtEMEUyQ"  alt="..." height="150px" style="width: 23%; float: left; padding-left: 2%;"></iframe>
+            <iframe src="https://www.youtube.com/embed/aiK951xEgnM"  alt="..." height="150px" style="width: 23%;float: left; padding-left: 6%;"></iframe>
+            <iframe src="https://www.youtube.com/embed/KA8FtEMEUyQ"  alt="..." height="150px" style="width: 23%; float: left;padding-left: 2%;"></iframe>
+            </div>
+          <div class="carousel-item">
+            <iframe src="https://www.youtube.com/embed/aiK951xEgnM"  alt="..." height="150px" style="width: 23%;float: left; padding-left: 6%;"></iframe>
+            <iframe src="https://www.youtube.com/embed/KA8FtEMEUyQ"  alt="..." height="150px" style="width: 23%; float: left; padding-left: 2%;"></iframe>
+            <iframe src="https://www.youtube.com/embed/aiK951xEgnM"  alt="..." height="150px" style="width: 23%;float: left; padding-left: 6%;"></iframe>
+            <iframe src="https://www.youtube.com/embed/KA8FtEMEUyQ"  alt="..." height="150px" style="width: 23%; float: left;padding-left: 2%;"></iframe>
+           </div>
+         
+         </div>
+          
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev" style="width: 5%;background-color: #091351;
+        border-radius: 40px 0 0 40px;
+       
+        height: 30%; margin-top: auto; margin-bottom: auto;" data-bs-target="#carouselExampleControls" data-bs-slide="prev" >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden" >Previous</span>
+      </a>
+        <a class="carousel-control-next"  href="#carouselExampleControls" role="button" data-slide="next" type="button" style="width: 5%; background-color: #091351; 
+        border-radius: 0 40px 40px 0;
+        margin-right: -5%;
+        height: 30%; margin-top: auto; margin-bottom: auto;" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+    </a>
+    </div>
+       </div>&nbsp;&nbsp;&nbsp;
+
+       <div class="right_part">
+        <div class="sections" style="padding-top: 13%;">
+            <div class="card" style="height: 610px; border: none; border-radius: 12px; width: 290px; ">
+                <div class="card-body">
+                  <h5 class="card-title">VIDEO ALBUMS</h5>&nbsp;
+                  <h5 class="card-text">Independence Day  </h5>&nbsp;
+                 
+                   
+                  <div class="row row-cols-1 row-cols-md-3 g-4" style="padding-left: 2ch; padding-right: 2.5ch;" > 
+                    <div class="col">
+                      <div class="card h-40" style="border-radius: 5px;">
+                        <iframe src="https://www.youtube.com/embed/KA8FtEMEUyQ" class="card-img-top" alt="..." width="25px" height="70px" style="border-radius: 5px; display: flex;" ></iframe>
+                        
+                        
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-40" style="border-radius: 5px;">
+                        <iframe src="https://www.youtube.com/embed/KA8FtEMEUyQ" class="card-img-top" alt="..." width="25px" height="70px" style="border-radius: 5px; display: flex;" ></iframe>
+                        </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-40" style="border-radius: 5px;">
+                        <iframe src="https://www.youtube.com/embed/KA8FtEMEUyQ" class="card-img-top" alt="..." width="25px" height="70px" style="border-radius: 5px; display: flex;" ></iframe>
+                     
+                       
+                      </div>
+                    </div>
+                  </div>&nbsp;&nbsp;
+    
+                  <h4 class="card-text" style="padding-top: 2ch;">Annual Day Celebration</h4>&nbsp;
+                  <div class="row row-cols-1 row-cols-md-3 g-4" style="padding-left: 2ch; padding-right: 2.5ch;" > 
+                    <div class="col">
+                      <div class="card h-40" style="border-radius: 5px;">
+                        <iframe src="https://www.youtube.com/embed/KA8FtEMEUyQ" class="card-img-top" alt="..." width="25px" height="70px" style="border-radius: 5px; display: flex;" ></iframe>
+                       
+                        
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-40" style="border-radius: 5px;">
+                        <iframe src="https://www.youtube.com/embed/KA8FtEMEUyQ" class="card-img-top" alt="..." width="25px" height="70px" style="border-radius: 5px; display: flex;" ></iframe>
+                         </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-40" style="border-radius: 5px;">
+                        <iframe src="https://www.youtube.com/embed/KA8FtEMEUyQ" class="card-img-top" alt="..." width="25px" height="70px" style="border-radius: 5px; display: flex;" ></iframe>
+                     
+                       
+                      </div>
+                    </div>
+                  </div>
+    
+                  <h4 class="card-text" style="padding-top: 2ch;">Blood Donation Campaign</h4>&nbsp;
+    
+                  <div class="row row-cols-1 row-cols-md-3 g-4" style="padding-left: 2ch; padding-right: 2.5ch;" > 
+                    <div class="col">
+                      <div class="card h-40" style="border-radius: 5px;">
+                        <iframe src="https://www.youtube.com/embed/KA8FtEMEUyQ" class="card-img-top" alt="..." width="25px" height="70px" style="border-radius: 5px; display: flex;" ></iframe>
+                       
+                        
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-40" style="border-radius: 5px;">
+                        <iframe src="https://www.youtube.com/embed/KA8FtEMEUyQ" class="card-img-top" alt="..." width="25px" height="70px" style="border-radius: 5px; display: flex;" ></iframe>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-40" style="border-radius: 5px;">
+                        <iframe src="https://www.youtube.com/embed/KA8FtEMEUyQ" class="card-img-top" alt="..." width="25px" height="70px" style="border-radius: 5px; display: flex;" ></iframe>
+                     
+                       
+                      </div>
+                    </div>
+                  </div>
+    
+                  <h4 class="card-text" style="padding-top: 2ch;">Annual Day Celebration</h4>&nbsp;
+    
+                  <div class="row row-cols-1 row-cols-md-3 g-4" style="padding-left: 2ch; padding-right: 2.5ch;" > 
+                    <div class="col">
+                      <div class="card h-40" style="border-radius: 5px;">
+                        <iframe src="https://www.youtube.com/embed/KA8FtEMEUyQ" class="card-img-top" alt="..." width="25px" height="70px" style="border-radius: 5px; display: flex;" ></iframe>
+                        
+                        
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-40" style="border-radius: 5px;">
+                        <iframe src="https://www.youtube.com/embed/KA8FtEMEUyQ" class="card-img-top" alt="..." width="25px" height="70px" style="border-radius: 5px; display: flex;" ></iframe>
+                         </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-40" style="border-radius: 5px;">
+                        <iframe src="https://www.youtube.com/embed/KA8FtEMEUyQ" class="card-img-top" alt="..." width="25px" height="70px" style="border-radius: 5px; display: flex;" ></iframe>
+                     
+                       
+                      </div>
+                    </div>
+                  </div>
+                  <h4 class="card-text" style="padding-top: 2ch;">Annual Day Celebration</h4>&nbsp;
+    
+                  <div class="row row-cols-1 row-cols-md-3 g-4" style="padding-left: 2ch; padding-right: 2.5ch;" > 
+                    <div class="col">
+                      <div class="card h-40" style="border-radius: 5px;">
+                        <iframe src="https://www.youtube.com/embed/KA8FtEMEUyQ" class="card-img-top" alt="..." width="25px" height="70px" style="border-radius: 5px; display: flex;" ></iframe>
+                       
+                        
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-40" style="border-radius: 5px;">
+                        <iframe src="https://www.youtube.com/embed/KA8FtEMEUyQ" class="card-img-top" alt="..." width="25px" height="70px" style="border-radius: 5px; display: flex;" ></iframe>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-40" style="border-radius: 5px;">
+                        <iframe src="https://www.youtube.com/embed/KA8FtEMEUyQ" class="card-img-top" alt="..." width="25px" height="70px" style="border-radius: 5px; display: flex;" ></iframe>
+                     
+                       
+                      </div>
+                    </div>
+                  </div>
+                  <h4 class="card-text" style="padding-top: 2ch;">Annual Day Celebration</h4>&nbsp;
+    
+                  <div class="row row-cols-1 row-cols-md-3 g-4" style="padding-left: 2ch; padding-right: 2.5ch;" > 
+                    <div class="col">
+                      <div class="card h-40" style="border-radius: 5px;">
+                        <iframe src="https://www.youtube.com/embed/KA8FtEMEUyQ" class="card-img-top" alt="..." width="25px" height="70px" style="border-radius: 5px; display: flex;" ></iframe>
+                            
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-40" style="border-radius: 5px;">
+                        <iframe src="https://www.youtube.com/embed/KA8FtEMEUyQ" class="card-img-top" alt="..." width="25px" height="70px" style="border-radius: 5px; display: flex;" ></iframe>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-40" style="border-radius: 5px;">
+                        <iframe src="https://www.youtube.com/embed/KA8FtEMEUyQ" class="card-img-top" alt="..." width="25px" height="70px" style="border-radius: 5px; display: flex;" ></iframe>
+                        
+                       
+                      </div>
+                    </div>
+                  </div>
+                 
+                </div>
+              </div>
+              
+        </div>
+            
+        </div>
+</section>

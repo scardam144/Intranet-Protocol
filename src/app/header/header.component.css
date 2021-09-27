@@ -1,0 +1,129 @@
+.flex-container {
+    background: #09134f;
+    display: flex;
+    padding: 5px;
+    height: fit-content;
+  }
+  
+  .flex-child {
+    width: 50%;
+    float: left;
+  }
+  .badge{
+    position: relative;
+    top: -9px;
+    right: -18px;
+    padding: 2px 2px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+  }
+  
+  .input-fields {
+    width: 50%;
+    text-indent: 35px;
+    border-radius: 5px;
+    height: 34px;
+  }
+  .input-fields::placeholder{
+  color: #6743dd;
+  font-size: 4mm;
+  line-height: 34px ;
+  }
+  .input-icons i {
+    position:absolute;
+    padding: 6px;
+    
+  }
+  .input-icon {
+    position:absolute;
+    padding: 7px;
+    padding-left: 15px;
+  }
+  .input-icons {
+    padding-left: 30px;
+    padding-top: 10px;
+  
+    
+  }
+  
+  
+  .navbar {
+    background-color: #303a99;
+  
+    width: 100%;
+    position: static;
+   
+  }
+  
+    .navbar ul {
+        margin-left: 130px;
+    }
+  
+    .navbar li {
+        float: left;
+        list-style: none;
+        margin: 15px 20px;
+        font-family: system-ui;
+        font-weight: 600;
+        font-size: 16px;
+    }
+  
+        .navbar li a {
+            padding: 3px 3px;
+            color: white;
+            text-decoration: none;
+        }
+  
+            .navbar li a:hover {
+                color: white;
+                border-bottom: 4px solid #f74288;
+            }
+  
+            .navbar li a.active {
+                color: white;
+                border-bottom: 4px solid #f74288;
+            }
+  
+  .logo-text {
+    float: left;
+    color: white;
+    margin-left: 5px;
+    margin-top: 15px;
+  }
+  
+  .logo-image {
+    float: left;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 10px;
+    max-width: 40px;
+    max-height: 40px;
+    margin-left: 80px;
+  }
+  
+  span.a {
+    color: #7b7676;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  
+  span.b {
+    font-weight: 100;
+    color: #777373;
+    font-size: 12px;
+  }
+  
+  span.c {
+    color: darkblue;
+    font-size: 21px;
+    border-bottom: 4px solid #f72c83;
+    border-bottom-style: solid;
+  }
+  
+  
+  
+  .placeholder {
+    color: grey;
+    padding: 4px;
+  }

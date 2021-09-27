@@ -1,0 +1,270 @@
+<section class="container">
+  
+  <div class="flex-container" style="justify-content: center; ">
+    <div class="container">
+    <div class="left-half" style="width: 50%;float: left;">
+    <span class="c"><a (click)="DocumentboxFunction()" class="test" style="color: black; cursor: pointer;">Common Documents </a></span>
+    <span class="d"><a (click)="Documentbox1Function()" class="tes"  style="color: black; cursor:pointer;">Personal Documents </a></span>
+
+    </div>
+
+    <div class="right-half" style="width: 50%; float: left;">
+        <input class= "text-f" type="text" style="float: right; width: 50%; border-radius: 5px; height: 30px; border-color: gray; font-size: 15px;" placeholder="Search Document">
+              <a class="inputs"> 
+                  <i class="fa fa-search" style="color: #74727c; font-size: 16px;"></i></a>
+    </div>
+    </div>
+    <br>
+    <div *ngIf="Documentbox" style="height: 400px; overflow-y: auto; background-color: white; border: 2px solid whitesmoke; border-radius: 10px; ">
+     
+        <div class="card-body" style=" padding-left: 5%; padding-right: 5%;">
+            
+            <div class="container-fluid">  
+                        <div class="left-side">
+                            <div class="image-left">
+                                <img class="center" img [src] = "ImagePath3" height="100%" width="100%" style="object-fit: cover;" alt="word">
+                            </div>
+                            <div class="text-left">
+                                <label class="myfile">Template- Project Docs</label>
+                            </div>
+                        </div>
+                        <div class="right-side">
+                            <div class="text-right"> 
+                               <label class="myText"><a href="javascript:void(0)" (click)="openDoc()" style="cursor:pointer; color: black;">Open</a></label>
+                            </div>
+                            <div class="text-right">
+                                <label class="myText"><a href="javascript:void(0)" (click)="downloadPdf()" style="cursor:pointer;color: black;">Download</a></label>
+                            </div>
+                        </div>
+                    
+            </div>
+        
+            <div class="container-fluid">  
+                <div class="left-side">
+                    <div class="image-left">
+                        <img class="center" img [src] = "ImagePath4" height="100%" width="100%" style="object-fit: cover;" alt="pdf">
+                    </div>
+                    <div class="text-left">
+                        <label class="myfile">Leave Policy</label>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="text-right"> 
+                       <label class="myText"><a href="javascript:void(0)" (click)="openDoc()" style="cursor:pointer; color: black;">Open</a></label>
+                    </div>
+                    <div class="text-right">
+                        <label class="myText"><a href="javascript:void(0)" (click)="downloadPdf()" style="cursor:pointer;color: black;">Download</a></label>
+                    </div>
+                </div>
+            
+            </div>
+  
+            <div class="container-fluid">  
+                <div class="left-side">
+                    <div class="image-left">
+                        <img  class="center" img [src] = "ImagePath4" height="100%" width="100%" style="object-fit: cover;" alt="pdf">
+                    </div>
+                    <div class="text-left">
+                        <label class="myfile">Employee Handbook</label>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="text-right"> 
+                       <label class="myText"><a href="javascript:void(0)" (click)="openDoc()" style="cursor:pointer; color: black;">Open</a></label>
+                    </div>
+                    <div class="text-right">
+                        <label class="myText"><a href="javascript:void(0)" (click)="downloadPdf()" style="cursor:pointer;color: black;">Download</a></label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">  
+                <div class="left-side">
+                    <div class="image-left">
+                        <img class="center" img [src] = "ImagePath3" height="100%" width="100%" style="object-fit: cover;" alt="word">
+                    </div>
+                    <div class="text-left">
+                        <label class="myfile">Template- Refer a Friend</label>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="text-right"> 
+                       <label class="myText"><a href="javascript:void(0)" (click)="openDoc()" style="cursor:pointer; color: black;">Open</a></label>
+                    </div>
+                    <div class="text-right">
+                        <label class="myText"><a href="javascript:void(0)" (click)="downloadPdf()" style="cursor:pointer;color: black;">Download</a></label>
+                    </div>
+                </div>
+            
+            </div>
+
+
+            <div class="container-fluid">  
+                <div class="left-side">
+                    <div class="image-left">
+                        <img class="center" img [src] = "ImagePath4" height="100%" width="100%" style="object-fit: cover;" alt="pdf">
+                    </div>
+                    <div class="text-left">
+                        <label class="myfile">Travel Policy</label>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="text-right"> 
+                       <label class="myText"><a href="javascript:void(0)" (click)="openDoc()" style="cursor:pointer; color: black;">Open</a></label>
+                    </div>
+                    <div class="text-right">
+                        <label class="myText"><a href="javascript:void(0)" (click)="downloadPdf()" style="cursor:pointer;color: black;">Download</a></label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container-fluid">  
+                <div class="left-side">
+                    <div class="image-left">
+                        <img class="center" img [src] = "ImagePath4" height="100%" width="100%" style="object-fit: cover;" alt="pdf">
+                    </div>
+                    <div class="text-left">
+                        <label class="myfile">Travel Policy</label>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="text-right"> 
+                       <label class="myText"><a href="javascript:void(0)" (click)="openDoc()" style="cursor:pointer; color: black;">Open</a></label>
+                    </div>
+                    <div class="text-right">
+                        <label class="myText"><a href="javascript:void(0)" (click)="downloadPdf()" style="cursor:pointer;color: black;">Download</a></label>
+                    </div>
+                </div>
+            </div>
+          </div>
+          
+      </div>
+    </div>
+
+    <div *ngIf="Documentbox1" style="height: 400px; overflow-y: auto; background-color: white; border: 2px solid whitesmoke; border-radius: 10px; ">
+     
+        <div class="card-body" style=" padding-left: 5%; padding-right: 5%;">
+            
+            <div class="container-fluid">  
+                        <div class="left-side">
+                            <div class="image-left">
+                                <img class="center" img [src] = "ImagePath3" height="100%" width="100%" style="object-fit: cover;" alt="word">
+                            </div>
+                            <div class="text-left">
+                                <label class="myfile">Hello</label>
+                            </div>
+                        </div>
+                        <div class="right-side">
+                            <div class="text-right"> 
+                               <label class="myText"><a href="javascript:void(0)" (click)="openDoc()" style="cursor:pointer; color: black;">Open</a></label>
+                            </div>
+                            <div class="text-right">
+                                <label class="myText"><a href="javascript:void(0)" (click)="downloadPdf()" style="cursor:pointer;color: black;">Download</a></label>
+                            </div>
+                        </div>
+                    
+            </div>
+        
+            <div class="container-fluid">  
+                <div class="left-side">
+                    <div class="image-left">
+                        <img class="center" img [src] = "ImagePath3" height="100%" width="100%" style="object-fit: cover;" alt="pdf">
+                    </div>
+                    <div class="text-left">
+                        <label class="myfile"> Details</label>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="text-right"> 
+                       <label class="myText"><a href="javascript:void(0)" (click)="openDoc()" style="cursor:pointer; color: black;">Open</a></label>
+                    </div>
+                    <div class="text-right">
+                        <label class="myText"><a href="javascript:void(0)" (click)="downloadPdf()" style="cursor:pointer;color: black;">Download</a></label>
+                    </div>
+                </div>
+            
+            </div>
+  
+            <div class="container-fluid">  
+                <div class="left-side">
+                    <div class="image-left">
+                        <img  class="center" img [src] = "ImagePath4" height="100%" width="100%" style="object-fit: cover;" alt="pdf">
+                    </div>
+                    <div class="text-left">
+                        <label class="myfile">Privacy</label>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="text-right"> 
+                       <label class="myText"><a href="javascript:void(0)" (click)="openDoc()" style="cursor:pointer; color: black;">Open</a></label>
+                    </div>
+                    <div class="text-right">
+                        <label class="myText"><a href="javascript:void(0)" (click)="downloadPdf()" style="cursor:pointer;color: black;">Download</a></label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">  
+                <div class="left-side">
+                    <div class="image-left">
+                        <img class="center" img [src] = "ImagePath3" height="100%" width="100%" style="object-fit: cover;" alt="word">
+                    </div>
+                    <div class="text-left">
+                        <label class="myfile">Template- Refer a Friend</label>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="text-right"> 
+                       <label class="myText"><a href="javascript:void(0)" (click)="openDoc()" style="cursor:pointer; color: black;">Open</a></label>
+                    </div>
+                    <div class="text-right">
+                        <label class="myText"><a href="javascript:void(0)" (click)="downloadPdf()" style="cursor:pointer;color: black;">Download</a></label>
+                    </div>
+                </div>
+            
+            </div>
+
+
+            <div class="container-fluid">  
+                <div class="left-side">
+                    <div class="image-left">
+                        <img class="center" img [src] = "ImagePath3" height="100%" width="100%" style="object-fit: cover;" alt="pdf">
+                    </div>
+                    <div class="text-left">
+                        <label class="myfile">Payments</label>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="text-right"> 
+                       <label class="myText"><a href="javascript:void(0)" (click)="openDoc()" style="cursor:pointer; color: black;">Open</a></label>
+                    </div>
+                    <div class="text-right">
+                        <label class="myText"><a href="javascript:void(0)" (click)="downloadPdf()" style="cursor:pointer;color: black;">Download</a></label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container-fluid">  
+                <div class="left-side">
+                    <div class="image-left">
+                        <img class="center" img [src] = "ImagePath4" height="100%" width="100%" style="object-fit: cover;" alt="pdf">
+                    </div>
+                    <div class="text-left">
+                        <label class="myfile">Work </label>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="text-right"> 
+                       <label class="myText"><a href="javascript:void(0)" (click)="openDoc()" style="cursor:pointer; color: black;">Open</a></label>
+                    </div>
+                    <div class="text-right">
+                        <label class="myText"><a href="javascript:void(0)" (click)="downloadPdf()" style="cursor:pointer;color: black;">Download</a></label>
+                    </div>
+                </div>
+            </div>
+          </div>
+          
+      
+    </div>
+    
+    </section>

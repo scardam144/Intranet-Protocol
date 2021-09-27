@@ -1,0 +1,53 @@
+span.c {
+    color: darkblue;
+    border-bottom: 4px solid #f72c83;
+    font-size: 21px;
+    border-bottom-style: solid;
+    padding: 0px;
+    padding-bottom: 1px;
+    margin-left: 5%;
+}
+
+
+
+.cards {
+     height: 300px;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: white;
+    border-radius: 10px;
+}
+
+.description {
+    width:60%;
+    float: left;
+    
+    height: 100%;
+    
+}
+.image {
+    float: left;
+    width: 35%;
+    height: 100%;
+   
+}
+
+.heading {
+    width: 70%;
+    padding-top: 10%;
+   float: left;
+    color: #123582;
+    font-size: 20px;
+    font-family: sans-serif;
+    
+}
+
+.paragraph {
+    float: right;
+    color: #525453;
+    font-size: small;
+    padding-top: 2%;
+}
+.part1{
+    padding-top: 2%;
+}

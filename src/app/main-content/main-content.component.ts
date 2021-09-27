@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+
+declare var require: any
+const FileSaver = require('file-saver');
 
 @Component({
   selector: 'app-main-content',
@@ -17,6 +21,7 @@ export class MainContentComponent implements OnInit {
   ImagePath8: string;
   ImagePath9: string;
   ImagePath10: string;
+  
 
   greet: string;
   title = 'project-form';
@@ -25,8 +30,16 @@ export class MainContentComponent implements OnInit {
   arr = ['Sunday','Monday', 'Tuesday', 'Wednesday', 'Friday', 'Saturday']
   day = this.arr[this.currentDay]
   hrs = this.currentDate.getHours();
+  name: any;
+
+  downloadPdf() {
+    const pdfSource =  "/assets/files/file_name.pdf";
+    const pdfName = "Template- Project Docs";
+    FileSaver.saveAs(pdfSource, pdfName);
+  }
+
     
-  constructor() {
+  constructor(private route: ActivatedRoute,) {
     this.ImagePath = '/assets/images/small-logo.png'
     this.ImagePath2 = '/assets/images/office.jpg'
     this.ImagePath3 = '/assets/images/word_logo.png'
@@ -49,7 +62,10 @@ export class MainContentComponent implements OnInit {
     }
     
   }
-  ngOnInit(): void {
+  ngOnInit() {
+    this.route.queryParams.subscribe(params => {
+      this.name = params['name'];
+    });
   }
 
 }
